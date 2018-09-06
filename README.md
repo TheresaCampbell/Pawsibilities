@@ -18,9 +18,9 @@ Pawsibilities connects animal lovers with adoptable pets in their area. Find pet
 1. Fork & Clone
 2. Run `bundle install` to install dependencies
 3. Run `bin/rake db:reset` to create, load and seed db
-4. Run `bin/rails c` to on in the console and run two jobs:
-   a) First, in the Shelter model ('app/models/shelter.rb'), comment out the specified lines of code. Run `DownloadSheltersJob.perform_now`. Uncomment those same lines in the Shelter model.
-   b) Run `DownloadPetsJob.perform_now`
+4. Run `bin/rails c` in the terminal and run two jobs:
+a) First, in the Shelter model ('app/models/shelter.rb'), comment out the specified lines of code. Run `DownloadSheltersJob.perform_now`. Uncomment those same lines in the Shelter model.
+b) Run `DownloadPetsJob.perform_now`
 5. Create .env file based on .env.example
 6. Sign up for a Petfinder, MailGun and Google API account
 7. Put the API keys into appropriate .env vars
